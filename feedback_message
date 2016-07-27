@@ -1,0 +1,33 @@
+{
+    "text": "Your response is requested!",
+    "attachments": [
+        {
+            "text": "How do you feel about this creative?",
+            "fallback": "You are unable to provide feedback.",
+            "callback_id": "boxchecker",
+            "color": "#3AA3E3",
+            "attachment_type": "default",
+            "actions": [
+                {
+                    "name": "good",
+                    "text": "Good To Go!",
+                    "type": "button",
+                    "value": "good"
+                },
+                {
+                    "name": "changes",
+                    "text": "Needs Changes",
+                    "style": "danger",
+                    "type": "button",
+                    "value": "changes",
+                    "confirm": {
+                        "title": "Are you sure?",
+                        "text": "What do you want to change about this creative?",
+                        "ok_text": "Yes",
+                        "dismiss_text": "No"
+                    }
+                }
+            ]
+        }
+    ]
+}
